@@ -14,7 +14,10 @@ def prediction():
             print("The value should be an number")
     
     estimatePrice = estimate_price(theta0, theta1, km)
-    print(estimatePrice)
+    if estimatePrice < 0:
+        print("0€")
+        return
+    print(f"The model prediction is {estimatePrice:.2f}€ on average.")
 
 def main():
     prediction()
