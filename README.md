@@ -1,4 +1,10 @@
+creer le venv : python3 -m venv venv
 pour lancer le venv : source venv/bin/activate
+pour installer les dependances : pip install -r requirements.txt
+
+a 42 :  python3 -m venv /goinfre/$USER/venv_ft_lr
+        source /goinfre/$USER/venv_ft_lr/bin/activate
+        pip install -r requirements.txt
 
 estimatePrice(mileage) = θ0 + (θ1 × mileage) est l'équation d'une droite (y = ax + b).
 
@@ -17,6 +23,8 @@ On multiple ça ensuite par somme (Σ) des erreurs sur chaque valeur du dataset.
 
 pour theta1 on multiplie chaqu'une des erreurs par le mileage qui a servit a calculer l'erreur avant de l'ajouter au sum.
 (θ0 + (θ1 × mileage))
+
+
 
 
 
@@ -39,6 +47,7 @@ ex :    mileage = 0 - price = 100
         theta1_norm = (0 - 100) / (1 - 0) = -100
         de 0 à 1 je perd 100€
         donc par tranche de 0.1 je perd 10€
+
 
 
 
